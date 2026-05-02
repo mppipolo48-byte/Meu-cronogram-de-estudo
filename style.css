@@ -1,0 +1,91 @@
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #00ff88;
+    font-size: 2.5rem;
+}
+
+/* Estilo da Tabela/Calendário */
+.calendar {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+.calendar th {
+    background-color: #1e1e1e;
+    color: #00ff88;
+    padding: 15px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.calendar td {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    vertical-align: top;
+    height: 150px;
+    transition: transform 0.3s ease;
+    border-top: 4px solid transparent;
+}
+
+.calendar td:hover {
+    transform: translateY(-5px);
+    background-color: #252525;
+}
+
+/* Cores por Tipo de Matéria */
+.course-prog { border-top-color: #00ff88 !important; }
+.course-sys { border-top-color: #00b4ff !important; }
+.course-project { border-top-color: #ff0077 !important; }
+
+/* Detalhes Internos */
+.time {
+    display: block;
+    font-size: 0.75rem;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+strong {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #666;
+}
